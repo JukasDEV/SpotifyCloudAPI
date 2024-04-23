@@ -1,4 +1,4 @@
-package Models;
+package com.ProjetoCloud.SpotifyAPI.Models;
 
 import jakarta.persistence.*;
 import lombok.Getter;
