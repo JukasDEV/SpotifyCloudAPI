@@ -14,12 +14,11 @@ public class OpenApiConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Spotify API")
+                        .title("SpotifyRESTAPI")
                         .version("v1")
-                        .description("Esta é uma API de exemplo para o gerenciamento de usuários do Spotify.")
-                        .termsOfService("http://spotify.com/terms")
+                        .description("RESTAPI by João Curvello")
                         .contact(new Contact()
-                                .name("Suporte Spotify")
+                                .name("Github")
                                 .url("http://spotify.com/support")
                                 .email("support@spotify.com"))
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")));
