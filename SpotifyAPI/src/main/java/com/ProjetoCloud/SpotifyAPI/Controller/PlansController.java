@@ -37,7 +37,7 @@ public class PlansController {
         return planRepository.findAll();
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/get{id}")
     public ResponseEntity<Plans> getById(@PathVariable("id") Integer id) {
         return this.planRepository.findById(id).map(plan -> {
             return new ResponseEntity<>(plan, HttpStatus.OK);
@@ -49,7 +49,7 @@ public class PlansController {
         Plans savedPlan = planRepository.save(plan);
         return new ResponseEntity<>(savedPlan, HttpStatus.CREATED);
     }
-    @PutMapping("{id}")
+    @PutMapping("/update{id}")
     public ResponseEntity<Plans> updateBand(@PathVariable Integer id, @RequestBody Plans planDetails) {
         return planRepository.findById(id).map(plans -> {
             plans.setName(nonNullOrDefault(planDetails.getName(), plans.getName()));
