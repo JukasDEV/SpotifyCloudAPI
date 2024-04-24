@@ -19,8 +19,8 @@ public class OpenApiConfig {
                         .description("RESTAPI by João Curvello")
                         .contact(new Contact()
                                 .name("Github")
-                                .url("http://spotify.com/support")
-                                .email("support@spotify.com"))
-                        .license(new License().name("Apache 2.0").url("http://springdoc.org")));
+                                .url("https://github.com/JukasDEV/SpotifyCloudAPI")
+                                )
+                        .license(new License().name("Linkedin").url("https://www.linkedin.com/in/jo%C3%A3o-lucas-curvello-403340269/")));
     }
 }
